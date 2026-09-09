@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle de Gastos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Projeto de portfólio</p>
+        <h1>Controle de Gastos</h1>
+        <p class="subtitle">Organize receitas e despesas diretamente no navegador.</p>
+      </div>
+
+      <button id="clearAllBtn" class="button button-danger" type="button">
+        Limpar dados
+      </button>
+    </section>
+
+    <section class="summary-grid" aria-label="Resumo financeiro">
+      <article class="card summary-card">
+        <span>Saldo</span>
+        <strong id="balance">R$ 0,00</strong>
+      </article>
+
+      <article class="card summary-card">
+        <span>Receitas</span>
+        <strong id="income">R$ 0,00</strong>
+      </article>
+
+      <article class="card summary-card">
+        <span>Despesas</span>
+        <strong id="expense">R$ 0,00</strong>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="card form-card">
+        <h2>Nova movimentação</h2>
+
+        <form id="transactionForm">
+          <label for="description">Descrição</label>
+          <input
+            id="description"
+            name="description"
+            type="text"
+            placeholder="Ex.: Salário, mercado, academia..."
+            maxlength="60"
+            required
+          />
+
+          <label for="amount">Valor</label>
+          <input
+            id="amount"
+            name="amount"
+            type="number"
+            inputmode="decimal"
+            step="0.01"
+            min="0.01"
+            placeholder="0,00"
+            required
+          />
+
+          <label for="type">Tipo</label>
+          <select id="type" name="type" required>
+            <option value="income">Receita</option>
+            <option value="expense">Despesa</option>
+          </select>
+
+          <button class="button button-primary" type="submit">
+            Adicionar
+          </button>
+        </form>
+      </article>
+
+      <article class="card history-card">
+        <div class="history-header">
+          <h2>Histórico</h2>
+          <span id="transactionCount">0 movimentações</span>
+        </div>
+
+        <ul id="transactionList" class="transaction-list"></ul>
+
+        <p id="emptyState" class="empty-state">
+          Nenhuma movimentação cadastrada ainda.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
