@@ -62,6 +62,6 @@ controle-gastos/
 - Modo escuro
 - Login e banco de dados
 
-## Autor
+## Autor >jh__rocha
 
 Projeto desenvolvido para estudo e portfólio em desenvolvimento de software.
