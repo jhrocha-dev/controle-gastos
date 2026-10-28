@@ -1,18 +1,15 @@
 # Controle de Gastos Pessoais
 
-Projeto simples de controle financeiro desenvolvido com **HTML, CSS e JavaScript puro**.
-
-O objetivo é praticar fundamentos de desenvolvimento front-end e criar um projeto de portfólio para GitHub.
+Aplicação web para registrar receitas e despesas, acompanhar o saldo e organizar movimentações por categoria e mês.
 
 ## Funcionalidades
 
-- Adicionar receitas
-- Adicionar despesas
-- Calcular saldo automaticamente
-- Exibir total de receitas e despesas
-- Excluir movimentações
-- Limpar todos os registros
-- Armazenar dados no navegador com `localStorage`
+- Cadastrar receitas e despesas
+- Categorizar movimentações conforme o tipo
+- Filtrar o histórico e os totais por mês
+- Exibir saldo, receitas e despesas do período selecionado
+- Excluir movimentações ou limpar todos os dados
+- Salvar os dados no navegador com `localStorage`
 - Layout responsivo para computador e celular
 
 ## Tecnologias
@@ -24,44 +21,6 @@ O objetivo é praticar fundamentos de desenvolvimento front-end e criar um proje
 
 ## Como executar
 
-1. Baixe ou clone este repositório.
-2. Abra o arquivo `index.html` no navegador.
-3. Cadastre suas receitas e despesas.
+Abra `index.html` no navegador. Não é necessário instalar dependências.
 
-Não é necessário instalar nenhuma dependência.
-
-## Estrutura
-
-```text
-controle-gastos/
-├── index.html
-├── style.css
-├── script.js
-├── .gitignore
-└── README.md
-```
-
-## O que pratiquei neste projeto
-
-- Manipulação do DOM
-- Eventos em JavaScript
-- Arrays e objetos
-- Funções
-- `filter`, `reduce` e `sort`
-- Formatação de moeda e datas
-- Persistência de dados com LocalStorage
-- Responsividade com CSS
-
-## Próximas melhorias
-
-- Filtro por mês
-- Categorias de gastos
-- Gráficos
-- Edição de movimentações
-- Exportação para CSV
-- Modo escuro
-- Login e banco de dados
-
-## Autor >jh__rocha
-
-Projeto desenvolvido para estudo e portfólio em desenvolvimento de software.
+Os dados ficam salvos no `localStorage` do navegador e dispositivo usados. Eles não são sincronizados entre dispositivos.
